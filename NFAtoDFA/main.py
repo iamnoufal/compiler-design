@@ -5,7 +5,7 @@ for i in input("Enter the states: "):
 states = nfa.keys()
 for state in states:
   for path in paths:
-    nfa[state][path] = (input("Enter the end state from "+state+" through path "+path+": "))
+    nfa[state][path] = input("Enter the end state from "+state+" through path "+path+": ")
 dfa = nfa.copy()
 for state in states:
   for path in paths:
